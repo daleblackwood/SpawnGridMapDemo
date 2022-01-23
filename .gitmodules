@@ -1,0 +1,3 @@
+[submodule "addons/SpawnGridMap"]
+	path = addons/SpawnGridMap
+	url = git@github.com:daleblackwood/SpawnGridMap.git

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://meshlib/arrowset.meshlib" type="MeshLibrary" id=1]
+[ext_resource path="res://meshlib/arrowset.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/SpawnGridMap/SpawnGridMap.gd" type="Script" id=3]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="SpawnGridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+cell_center_y = false
+data = {
+"cells": PoolIntArray( 0, 0, 655360, 65535, 0, 1441792, 0, 1, 1048576, 65535, 1, 0 )
+}
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_clip_": 0
+}
+map_scene = ExtResource( 2 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.912149, 0.409859, 0, -0.409859, 0.912149, 0, 5.48957, 13.753 )
